@@ -32,7 +32,7 @@ The following external libraries are used in this framework:
 * Get user information (name, avatar, UID, Email)
 * Get user token
 
-## globalization
+## Internationalization
 * Support multiple languages
 * Consistent with mobile language
 
