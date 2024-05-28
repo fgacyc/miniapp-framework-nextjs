@@ -7,12 +7,11 @@
 
 # 1 Introduction
 
-FGA Mobile Mini App Framework is a front-end product solution based on [NextJS](https://nextjs.org/) and [T3](https://create.t3.gg/), using the latest technology stack , with built-in i18n international solutions, dynamic routing, UI framework, status management, analysis tools and other rich functional components, it can quickly help you build a Mini App product prototype.
+FGA Mobile Mini App Framework is a front-end product solution build with Tupescript, based on [NextJS](https://nextjs.org/) and [T3](https://create.t3.gg/), using the latest technology stack , with built-in i18n international solutions, dynamic routing, UI framework, status management, analysis tools and other rich functional components, it can quickly help you build a Mini App product prototype.
 
 The following external libraries are used in this framework:
 * [Ant Design Mobile](https://mobile.ant.design/components): UI framework
 * [React i18n](https://react.i18next.com/): Internationalization
-* [React Router](https://reactrouter.com/): Dynamic routing
 * [Zusand](https://zustand-demo.pmnd.rs/): Status management
 * [React Icons](https://react-icons.github.io/react-icons/): Icon library
 * [Tailwind CSS](https://tailwindcss.com/): CSS framework
