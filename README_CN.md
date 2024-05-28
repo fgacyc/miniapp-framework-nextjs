@@ -8,12 +8,11 @@
 
 # 1. 简介
 
-FGA Mobile Mini App Framework 是一个前端产品解决方案，基于[NextJS](https://nextjs.org/) 和 [T3](https://create.t3.gg/) 实现，使用了最新的技术栈，内置了 i18n 国际化解决方案，动态路由，UI框架，状态管理，分析工具等丰富的功能组件，可以快速帮你搭建 Mini App的产品原型。
+FGA Mobile Mini App Framework 是一个前端产品解决方案，使用Typescript构建，基于[NextJS](https://nextjs.org/) 和 [T3](https://create.t3.gg/) 实现，使用了最新的技术栈，内置了 i18n 国际化解决方案，动态路由，UI框架，状态管理，分析工具等丰富的功能组件，可以快速帮你搭建 Mini App的产品原型。
 
 在该框架中使用了下面的外部库：
 * [Ant Design Mobile](https://mobile.ant.design/components): UI框架
 * [React i18n](https://react.i18next.com/): 国际化
-* [React Router](https://reactrouter.com/): 动态路由
 * [Zustand](https://zustand-demo.pmnd.rs/): 状态管理
 * [React Icons](https://react-icons.github.io/react-icons/): 图标库
 * [Tailwind CSS](https://tailwindcss.com/): CSS框架
