@@ -251,7 +251,7 @@ export const useStore = create<StoreState>((set) => ({
 }));
 ```
 
-## 9.2 Usage status
+## 9.2 Use status
 ```typescript
 // components/Counter.ts
 import { useStore } from './store';
@@ -351,7 +351,7 @@ fetch(url, {
 
 
 
-# 11. Multilingual
+# 11. Internationalization
 In Mini App, we use React i18n to achieve internationalization, and multi-language switching can be achieved through simple configuration.
 When the Mini App is opened, it will automatically switch the language according to Mobile's language settings. If the corresponding language is not found, English will be used by default.
 
