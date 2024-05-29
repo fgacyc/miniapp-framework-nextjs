@@ -64,9 +64,9 @@ export default function TermsOfService() {
                         <h1 className="text-2xl font-bold mb-4">Terms of Service</h1>
 
                         <h2 className="text-xl font-semibold mb-2">1. Introduction</h2>
-                        <p className="mb-4">Welcome to FGA Tech Team ("we," "our," or "us"). These Terms of Service
-                            ("Terms")
-                            govern your use of our technology products and services ("Services"). By accessing or using our
+                        <p className="mb-4">Welcome to FGA Tech Team (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). These Terms of Service
+                            (&quot;Terms&quot;)
+                            govern your use of our technology products and services (&quot;Services&quot;). By accessing or using our
                             Services, you agree to be bound by these Terms. If you do not agree to these Terms, please do
                             not
                             use our Services.</p>
@@ -141,7 +141,7 @@ export default function TermsOfService() {
                         <h2 className="text-xl font-semibold mb-2">10. Changes to Terms</h2>
                         <p className="mb-4">We reserve the right, at our sole discretion, to modify or replace these Terms
                             at
-                            any time. If a revision is material, we will provide at least 30 days' notice prior to any new
+                            any time. If a revision is material, we will provide at least 30 days&apos; notice prior to any new
                             terms
                             taking effect. What constitutes a material change will be determined at our sole discretion.</p>
 

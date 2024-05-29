@@ -79,11 +79,11 @@ export default function PrivacyPolicy() {
                         <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
 
                         <h2 className="text-xl font-semibold mb-2">1. Introduction</h2>
-                        <p className="mb-4">FGA Tech Team ("we," "our," or "us") is committed to protecting your privacy.
+                        <p className="mb-4">FGA Tech Team (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy.
                             This
                             Privacy Policy explains how we collect, use, disclose, and safeguard your information when you
                             use
-                            our technology products and services ("Services").</p>
+                            our technology products and services (&quot;Services&quot;).</p>
 
                         <h2 className="text-xl font-semibold mb-2">2. Information We Collect</h2>
                         <p className="mb-4">We may collect information about you in a variety of ways, including:</p>
