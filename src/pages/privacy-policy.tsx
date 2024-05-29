@@ -36,7 +36,6 @@ export default function PrivacyPolicy() {
                             <li>了解和分析您如何使用我们的服务。</li>
                             <li>开发新产品、服务、功能和功能。</li>
                             <li>与您沟通，包括客户服务，向您提供更新和其他与服务相关的信息。</li>
-                            <li>处理您的交易和管理您的订单。</li>
                             <li>向您发送电子邮件。</li>
                             <li>查找和防止欺诈行为。</li>
                         </ul>
@@ -112,7 +111,6 @@ export default function PrivacyPolicy() {
                                 other
                                 information relating to the Services.
                             </li>
-                            <li>To process your transactions and manage your orders.</li>
                             <li>To send you emails.</li>
                             <li>To find and prevent fraud.</li>
                         </ul>
@@ -173,7 +171,7 @@ export default function PrivacyPolicy() {
 
                         <h2 className="text-xl font-semibold mb-2">8. Contact Us</h2>
                         <p>If you have any questions about this Privacy Policy, please contact us at <a
-                            href="mailto:fgacyc.technology@gmail.com"
+                            href="#"
                             className="text-blue-500">fgacyc.technology@gmail.com</a>.
                         </p>
                         <div className={"h-10"}></div>

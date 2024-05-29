@@ -13,6 +13,9 @@ import {type ReactNode, useEffect, useState} from "react";
 import {capitalizeAllFirstLetters} from "@/components/tools";
 import {useUserStore} from "@/store/use-store";
 import {useTranslation} from "next-i18next";
+import {router} from "next/client";
+import {useRouter} from "next/navigation";
+import type {AppRouterInstance} from "next/dist/shared/lib/app-router-context.shared-runtime";
 
 interface ActionSheetButtonProps {
     title: string;
@@ -101,7 +104,7 @@ export default function ActionSheetMenu() {
     const buttonStyle = "w-[28px] h-[28px]";
     const {t} = useTranslation();
     const [devModal, setDevModal] = useState<boolean>(false);
-
+    const router: AppRouterInstance = useRouter();
 
     function copyToClipboard() {
         navigator.clipboard.writeText(window.location.href).then(() => {
@@ -138,7 +141,10 @@ export default function ActionSheetMenu() {
         {
             title: t("Settings"),
             icon: <GoGear className={buttonStyle}/>,
-            onClick: () => window.open('/settings', "_self")
+            onClick: () => {
+                setShowMenu(false);
+                router.push('/settings');
+            }
         },
         {
             title: t("Profile"),
@@ -148,7 +154,10 @@ export default function ActionSheetMenu() {
         {
             title: t("About"),
             icon: <GoInfo className={buttonStyle}/>,
-            onClick: () => window.open('/about', "_self")
+            onClick: () => {
+                setShowMenu(false);
+                router.push('/about');
+            }
         },
         {
             title: t("Share"),

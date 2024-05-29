@@ -147,7 +147,7 @@ export default function TermsOfService() {
 
                         <h2 className="text-xl font-semibold mb-2">11. Contact Us</h2>
                         <p>If you have any questions about these Terms, please contact us at <a
-                            href="mailto:fgacyc.technology@gmail.com"
+                            href="#"
                             className="text-blue-500">fgacyc.technology@gmail.com</a>.
                         </p>
                         <div className={"h-10"}></div>
