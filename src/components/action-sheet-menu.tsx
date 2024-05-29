@@ -167,7 +167,7 @@ export default function ActionSheetMenu() {
             onClick: !config.shared ? null : copyToClipboard
         },
         {
-            title: "Dev",
+            title: t("DEV"),
             icon: <GoTools className={buttonStyle}/>,
             onClick: () => {
                 setDevModal(true);
