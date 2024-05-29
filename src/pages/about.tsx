@@ -4,12 +4,16 @@ import Block from "@/components/block";
 import NavBar from "@/components/nav-bar";
 import Image from "next/image";
 import {capitalizeAllFirstLetters} from "@/components/tools";
+import {useTranslation} from "next-i18next";
+import {useRouter} from "next/navigation";
 
 export default function About() {
+    const { t } = useTranslation();
+    const router = useRouter();
 
     return (
         <div className={"h-screen"}>
-            <NavBar>About</NavBar>
+            <NavBar>{t("About")}</NavBar>
             <div className={"flex flex-col items-center p-8 bg-white mb-2"}>
                 <Image src="/app_icon.png" alt="app logo" width={64} height={64} className={"rounded-full"} />
                 <h1 className={"text-black text-xl text-center mt-4"}>{capitalizeAllFirstLetters(config.name)}</h1>
@@ -44,12 +48,16 @@ export default function About() {
             </Block>
 
             <Block title={undefined}>
-                <div className={"pb-2 flex flex-row justify-between  items-center"}>
+                <div className={"pb-2 flex flex-row justify-between  items-center"}
+                    onClick={() => router.push('/terms-of-service')}
+                >
                     <div>Terms of Service</div>
                     <GoChevronRight className={"w-[18px] h-[18px]"}/>
                 </div>
                 <hr/>
-                <div className={"pt-2 flex flex-row justify-between items-center"}>
+                <div className={"pt-2 flex flex-row justify-between items-center"}
+                        onClick={() => router.push('/privacy-policy')}
+                >
                     <div>Privacy Policy</div>
                     <GoChevronRight className={"w-[18px] h-[18px]"}/>
                 </div>

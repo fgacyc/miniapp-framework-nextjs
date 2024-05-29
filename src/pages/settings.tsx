@@ -3,15 +3,17 @@ import NavBar from "@/components/nav-bar";
 import {Input, Switch} from "@nextui-org/react";
 import {RadioGroup, Radio} from "@nextui-org/react";
 import {useSettingsStore} from "@/store/settings-store";
+import {useTranslation} from "next-i18next";
 
 export default function Settings() {
     const [isDarkMode,toggleDarkMode] = useSettingsStore(state => [state.isDarkMode,state.toggleDarkMode]);
     const [radioValue,setRadioValue] = useSettingsStore(state => [state.radioValue,state.setRadioValue])
     const [inputValue,setInputValue] = useSettingsStore(state => [state.inputValue,state.setInputValue])
+    const { t } = useTranslation();
 
     return (
         <div className={"h-screen"}>
-            <NavBar>Settings</NavBar>
+            <NavBar>{t("Settings")}</NavBar>
             <Block title={undefined}>
                 <div className={"py-2 flex flex-row justify-between items-center"}>
                     <div className={"text-base"}>Dark Mode</div>
