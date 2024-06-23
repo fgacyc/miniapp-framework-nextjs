@@ -507,3 +507,11 @@ After being deployed to Vercel, you can automatically check the Mini App's acces
 ## 17.1 How to use application settings
 In Mini App, we provide a settings page `src/pages/settings.jsx`, through which you can set some Mini App configurations.
 And there is a global state `useSettingsStore` to store these configurations (located in `src/store/settings-store.ts`), and the configuration can be read and modified through this state.
+## 17.2 How to read ENV variables 
+```
+DB_SOME_KEY=123
+```
+```
+console.log(process.env.DB_SOME_KEY) // "123"
+```
+
