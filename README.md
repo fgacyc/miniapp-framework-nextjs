@@ -7,12 +7,12 @@
 
 # 1 Introduction
 
-FGA Mobile Mini App Framework is a front-end product solution build with Tupescript, based on [NextJS](https://nextjs.org/) and [T3](https://create.t3.gg/), using the latest technology stack , with built-in i18n international solutions, dynamic routing, UI framework, status management, analysis tools and other rich functional components, it can quickly help you build a Mini App product prototype.
+FGA Mobile Mini App Framework is a front-end product solution build with Typescript, based on [NextJS](https://nextjs.org/) and [T3](https://create.t3.gg/), using the latest technology stack, with built-in i18n international solutions, dynamic routing, UI framework, state management, analysis tools and other rich functional components, it can quickly help you build a Mini App product prototype.
 
 The following external libraries are used in this framework:
 * [Ant Design Mobile](https://mobile.ant.design/components): UI framework
 * [React i18n](https://react.i18next.com/): Internationalization
-* [Zusand](https://zustand-demo.pmnd.rs/): Status management
+* [Zustand](https://zustand-demo.pmnd.rs/): State management
 * [React Icons](https://react-icons.github.io/react-icons/): Icon library
 * [Tailwind CSS](https://tailwindcss.com/): CSS framework
 
@@ -49,7 +49,7 @@ The following external libraries are used in this framework:
 
 # 3. Apply for resources
 
-Before starting development, please fill out this form to request development resources: https://forms.gle/YLqFg3hJepD34TFA8
+Before starting development, please fill out this [Form](https://forms.gle/YLqFg3hJepD34TFA8) to request development resources
 
 After successful application, you will get a Mini App config json file, which contains
 
@@ -154,7 +154,7 @@ Src
 * locales: used for internationalization configuration, translation files are stored in translation
 * pages: store pages
 * server: stores server code
-* store: storage status management
+* store: storage State management
 
 # 6. Routing
 
@@ -230,9 +230,9 @@ const Index: React.FC = () => {
 
 
 
-# 9. Status management
-In Mini App, we use [Zusand](https://zustand-demo.pmnd.rs/) to implement state management, which can be achieved through simple configuration.
-## 9.1 Define status
+# 9. State management
+In Mini App, we use [Zustand](https://zustand-demo.pmnd.rs/) to implement state management, which can be achieved through simple configuration.
+## 9.1 Define State
 ```typescript
 // store.ts
 import create from 'zustand';
@@ -250,7 +250,7 @@ export const useStore = create<StoreState>((set) => ({
 }));
 ```
 
-## 9.2 Use status
+## 9.2 Use State
 ```typescript
 // components/Counter.ts
 import { useStore } from './store';
